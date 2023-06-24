@@ -1,0 +1,31 @@
+
+<!-- saved from url=(0065)https://scp-wiki.wdfiles.com/local-%2Dcode/component%3Acarousel/1 -->
+<html ng-app="carousel" ng-controller="CarouselController" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  <script src="./carousel_files/angular.min.js.Без названия"></script>
+  <script src="./carousel_files/2"></script>
+  <link href="./carousel_files/style.css" rel="stylesheet">
+  <link href="./carousel_files/1" rel="stylesheet">
+  <link href="./carousel_files/4" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper" id="background">
+    <div class="carousel">
+      <!-- ngRepeat: image in images track by $index -->
+    </div>
+    <div class="arrow decrementor" ng-class="index === 0 ? &#39;inactive&#39; : &#39;active&#39;" ng-click="increment(-1)">
+      <div class="image"></div>
+    </div>
+    <div class="arrow incrementor" ng-class="index === images.length-1 ? &#39;inactive&#39; : &#39;active&#39;" ng-click="increment(1)">
+      <div class="image"></div>
+    </div>
+    <div class="bubble-holder" ng-class="[options === &#39;yes&#39; ? null : &#39;invisible&#39;]">
+      <!-- ngRepeat: image in images track by $index -->
+    </div>
+    <div class="control play" ng-click="control(&#39;play&#39;)" ng-class="[state === &#39;play&#39; ? &#39;active&#39; : null,
+                    options === &#39;yes&#39; ? null : &#39;invisible&#39;]"></div>
+    <div class="control pause" ng-click="control(&#39;pause&#39;)" ng-class="[state === &#39;pause&#39; ? &#39;active&#39; : null,
+                    options === &#39;yes&#39; ? null : &#39;invisible&#39;]"></div>
+  </div>
+
+
+</body></html>
